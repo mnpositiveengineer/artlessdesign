@@ -1,0 +1,13 @@
+###PROTECT FILES###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule projektowanie-wnętrz index.html
+RewriteRule nowojorskie-wnętrze w-nowojorskim-stylu.html
+RewriteRule wnętrze-kamienicy w-zrekonstruowanej-kamienicy.html
+RewriteRule wnętrze-z-biokominkiem z-biokominkiem-w-roli-głównej.html
+RewriteRule wnętrze-z-granatem z-granatem-w-tle.html
+RewriteRule wnętrze-dla-faceta po-ciemnej-stronie-mocy.html
