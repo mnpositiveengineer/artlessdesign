@@ -3,9 +3,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	margin-left:auto;
 	margin-right:auto;
-	width:1500px;
+	width:1520px;
 	margin-top:0;
-
+	margin-bottom:0;
 }
 
 #menu {
@@ -189,9 +189,9 @@ main h1 {
 .kimjestem ol > li:last-child {
 	position: absolute;
 	right:0;
-	top:65%;
+	top:68%;
 	display: block;
-	width:230px;
+	width:220px;
 	height:4px;
 	background-color: black;
 }
@@ -199,7 +199,7 @@ main h1 {
 .kimjestem p {
 	color: #fff;
 	text-align: justify;
-	padding: 37px;
+	padding: 32px;
 }
 #oferta {
 	margin-top:20px;
@@ -212,6 +212,7 @@ main h1 {
 	float: left;
 	margin-left: 50px;
 	width: 400px;
+	color: rgba(126, 123, 106, 100);
 }
 .ofertasign {
 	width: 380px;
@@ -231,6 +232,7 @@ main h1 {
 	padding: 0;
 	position: relative;
 	height:100px;
+	color: rgba(126, 123, 106, 100);
 }
 
 #oferta ol > li:first-child {
@@ -250,7 +252,7 @@ main h1 {
 	bottom:15%;
 }
 #oferta p {
-	margin-top: 30px;
+	margin-top: 20px;
 	padding: 20px;
 }
 .uwagi {
@@ -263,7 +265,7 @@ footer {
 	background-color: rgba(229, 223, 215, 100);
 	margin-right: auto;
 	margin-left: auto;
-	width: 1500px;
+	width: 1520px;
 	margin-bottom: 0;
 	
 }
@@ -294,7 +296,6 @@ footer h1 {
 
 .content {
 	float: left;
-	margin-top: 50px;
 	width:500px;
 	height:277px;
 	position: relative;
@@ -313,11 +314,11 @@ footer h1 {
 }
 
 .clipartphoto {
-	height: 267px;
-	width: 400px;
+	height: 333px;
+	width: 500px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top:10px;
+	margin-top:0px;
 }
 .button {
 	width: 300px;
@@ -357,6 +358,7 @@ footer h1 {
 	height: 50px;
 	background-color: rgba(208, 194, 189, 100);
 	margin-top:200px;
+	margin-bottom:0px;
 	margin-left:auto;
 	margin-right:auto;
 	position: relative;
