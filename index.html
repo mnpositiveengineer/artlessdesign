@@ -182,8 +182,35 @@
 			</div>
 			<div style="clear:both"></div>
 			<div class="uwagi">
-			<p style="font-weight: bold;">Uwagi: Podane ceny są poglądowe i dotyczą powierzchni powyżej 30 m². Każdy projekt wyceniany jest indywidualnie.</p>
+			<p style="font-weight: bold;">Podane ceny są poglądowe i dotyczą powierzchni powyżej 30 m². Każdy projekt wyceniany jest indywidualnie. Zapraszam do wypełnienia krótkiego formularza w celu otrzymania w ciągu 24h oferty zawierającej wycenę.</p>
 			</div>
+		</section>
+		<section id="formula">
+			<div class="order">
+				<h1>zamów wycenę</h1>
+			</div>
+			<form>
+				<label for="email">adres email<span style="color:red;"> *</span></label>
+				<input id="email" type="email" required>
+				<label for="projekt">wybierz projekt<span style="color:red;"> *</span></label>
+				<select id="projekt" required>
+					<option value="kp">kompletny projekt</option>
+					<option value="ko">koncepcja</option>
+					<option value="zd">zmiany deweloperskie</option>
+				</select>
+				<label for="miasto">miasto<span style="color:red;"> *</span></label>
+				<input id="miasto" type="text" required>
+				<label for="termin">termin realizacji projektu<span style="color:red;"> *</span></label>
+				<select id="termin" required>
+					<option value="wtm">w tym miesiącu</option>
+					<option value="z23">za 2-3 miesiące</option>
+					<option value="pz">później</option>
+				</select>
+				<label for="wiadomosc">wiadomość</label>
+				<textarea id="wiadomosc" rows="10" cols="50"></textarea>
+				<input type="submit" value="ZAMÓW">
+			</form>
+			<p style="text-align:center; margin-top:30px;">Dane osobowe podane w formularzu będą przetwarzane w celu przygotowania i przesłania Ci wyceny projektu.</p>
 		</section>
 	</main>
 	<footer>
@@ -199,9 +226,11 @@
 						<li>nr tel.: 666 987 556</li>
 						<li>Wrocław / Konin</li>
 					</ol>
+					<a id="link5" href="#">
 					<div class="button">
 						<h1>zamów wycenę</h1>
 					</div>
+					</a>
 				</div>
 				<div class="content" style="margin-top: 0;">
 					<div class="clipartphoto">
@@ -262,7 +291,7 @@
 			$('#link2').click(function() { $.scrollTo($('#poznajmysie'), 500); });
 			$('#link3').click(function() { $.scrollTo($('#oferta'), 500); });
 			$('#link4').click(function() { $.scrollTo($('#kontakt'), 500); });
-			$('#link5').click(function() { $.scrollTo($('#projects'), 500); });
+			$('#link5').click(function() { $.scrollTo($('#formula'), 500); });
 		}
 		);
 	</script>

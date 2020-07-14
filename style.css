@@ -127,10 +127,12 @@ ol.sign > li:last-child {
 
 main {
 	margin-top: 50px;
+	padding-bottom: 50px;
 	background-color: #fff;
 	margin-left:0;
 	margin-right:0;
 	position:relative;
+	
 }
 
 .jakpracuje {
@@ -261,6 +263,89 @@ main h1 {
 	margin-right: auto;
 	padding-bottom:50px;
 }
+#formula {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.order {
+	height: 50px;
+	background-color: rgba(229, 223, 215, 100);
+	text-align: center;
+
+}
+.order h1{
+	margin:0;
+	padding: 15px;
+}
+form{
+	margin-top:50px;
+	margin-left: auto;
+	margin-right: auto;
+	width:500px;
+}
+input{
+	margin-top:10px;
+	margin-bottom:10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+input[type=email]{
+	height:30px;
+	width:500px;
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+}
+input[type=text]{
+	height:30px;
+	width:500px;
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+}
+select {
+	margin-top:10px;
+	margin-bottom:10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height:30px;
+	width:300px;
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+}
+textarea {
+	margin-top:10px;
+	margin-bottom:30px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width:500px;
+	height:200px;
+	resize: none;
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 5px;
+}
+input[type=submit]{
+	margin-right: auto;
+	margin-left: auto;
+	height:50px;
+	width: 110px;
+	background-color: rgba(229, 223, 215, 100);
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	border: none;
+	padding:16.5px 22px;
+	border-radius: 5px;
+}
+input[type=submit]:hover{
+	background-color: rgba(208, 194, 189, 100);
+	cursor:pointer;
+}
+
+
 footer {
 	background-color: rgba(229, 223, 215, 100);
 	margin-right: auto;
