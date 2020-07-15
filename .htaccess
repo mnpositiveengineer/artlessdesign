@@ -11,3 +11,8 @@ RewriteRule wnętrze-kamienicy w-zrekonstruowanej-kamienicy.html
 RewriteRule wnętrze-z-biokominkiem z-biokominkiem-w-roli-głównej.html
 RewriteRule wnętrze-z-granatem z-granatem-w-tle.html
 RewriteRule wnętrze-dla-faceta po-ciemnej-stronie-mocy.html
+
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://artlessdesign.pl%{REQUEST_URI} [L,NE,R=301]
