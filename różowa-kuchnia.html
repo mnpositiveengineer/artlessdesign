@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<HTML lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Artless | Projektowanie wnętrz</title>
+	<link rel = "icon" type = "image/png" href = "img/logo.png">
+	<meta name="description" content="Artless design wnętrza. Artless design projekt. Projektowanie wnętrz. Projektowanie wnętrz wrocław. Projektowanie wnętrz konin. Projektant wnętrz. Architekt wnętrz. Projekt mieszkania. Projekt kuchni. Remont mieszkania. Projekt wnętrza domu"/>
+	<meta name="keywords" content="Artless design wnętrza. Artless design projekt. Projektowanie wnętrz. Projektowanie wnętrz wrocław. Projektowanie wnętrz konin. Projektant wnętrz. Architekt wnętrz. Projekt mieszkania. Projekt kuchni. Remont mieszkania. Projekt wnętrza domu"/>
+	<meta http-equiv="x-ua-compatible" content="IE-edge, chrome=1"/>
+	<meta name="author" content="Michał Nowak"/>
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontello/css/fontello.css" type="text/css"/>
+</head>	
+<body>
+	<header>
+		<div class="container-fluid bg-menu mr-auto ml-auto p-0">
+			<div id="menu" class="container-fluid bg-menu mr-auto ml-auto p-0">
+				<nav class="navbar navbar-expand-md">
+					<button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="toggler button">
+					<span class="icon-menu"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="mainmenu">
+						<ul class="navbar-nav mr-auto ml-auto">
+							<li class="nav-item pr-4"><a class="nav-link" href="projektowanie-wnętrz">powrót do strony głównej</a></li>
+							<li class="nav-item nav-link pr-4" style="coursor:none;">nr tel: 666 987 556</li>
+							<li class="nav-item nav-link pr-4">katarzyna.bryl@gmail.com</li>
+							<li class="nav-item nav-link"><a class="d-none d-lg-inline-block text-body" href="https://www.instagram.com/kasiabrl/", target = blank ><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+					<a class="d-lg-none text-body mr-auto ml-auto" href="https://www.instagram.com/kasiabrl/", target = blank ><span class="icon-instagram"></span></a>
+				</nav>
+			</div>
+			<div id = "logo" class="container-fluid bg-menu mr-auto ml-auto p-0">
+				<a class="navbar-brand p-0 m-0" href="projektowanie-wnętrz"><img src="img/logo.png"/></a>
+			</div>
+		</div>
+	</header>
+	<section id="projects">
+		<div class="container p-4">
+			<h1 style="text-align: justify;">z różowym akcentem</h1>
+			<div class="row">
+				<div class = "col-12 image">
+					<img src="projekt/zra/1.jpg"/>
+				</div>
+				<div class = "col-12 image">
+					<img src="projekt/zra/2.jpg"/>
+				</div>
+				<div class = "col-12 image">
+					<img src="projekt/zra/3.jpg"/>
+				</div>
+			</div>
+		</div>
+	</section>
+		<section class="footer">
+			<div class="container-fluid">
+				<div class = "row">
+					<p class="finish" style="left: 5%;">artless<span style="margin-left:5px; margin-right:5px;">yet</span>artfull</p>
+					<p class="finish" style="right: 5%;">Katarzyna Bryl, 2020 &copy; Wszystkie prawa zastrzeżone</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<a class="arrow" href="#"><i class="icon-up-big"></i></></a>
+<script src="jquery-3.5.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		var logoY = $('#logo').offset().top;
+		var appearingArrow = function() {
+		var ScrollY = $(window).scrollTop();
+		if (ScrollY >= logoY) {
+				$('.arrow').addClass('arrow-appear');
+			} else {
+				$('.arrow').removeClass('arrow-appear');
+				}
+				};
+				appearingArrow();
+				$(window).scroll(function() {
+					appearingArrow();
+				});
+				});
+	</script>
+	<script>
+	$(document).ready(function() {
+	var MenuY = $('#menu').offset().top;
+	var stickyMenu = function() {
+	var ScrollY = $(window).scrollTop();
+	if (ScrollY >= MenuY) {
+			$('#menu').addClass('sticky');
+		} else {
+			$('#menu').removeClass('sticky');
+			}
+			};
+			stickyMenu();
+			$(window).scroll(function() {
+				stickyMenu();
+			});
+			});
+	</script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+	$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+	});
+	</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"/></script>
+</body>
+</HTML>

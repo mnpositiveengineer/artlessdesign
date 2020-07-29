@@ -11,6 +11,7 @@ RewriteRule wnętrze-kamienicy w-zrekonstruowanej-kamienicy.html
 RewriteRule wnętrze-z-biokominkiem z-biokominkiem-w-roli-głównej.html
 RewriteRule wnętrze-z-granatem z-granatem-w-tle.html
 RewriteRule wnętrze-dla-faceta po-ciemnej-stronie-mocy.html
+RewriteRule różowa-kuchnia różowa-kuchnia.html
 
 RewriteEngine On
 RewriteCond %{HTTPS} off [OR]
