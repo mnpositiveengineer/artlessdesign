@@ -1,17 +1,22 @@
+<!DOCTYPE HTML>
 <HTML lang="pl">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <?php
+
+if(isset($_POST['email'])) {
+  
+  session_start();
+  
   $visitor_email = $_POST['email'];
   $visitor_project = $_POST['project'];
   $visitor_city = $_POST['city'];
   $visitor_deadline = $_POST['deadline'];
   $message = $_POST['message'];
   
-  $email_from = 'kasia.bryl@artlessdesign.pl';
+	$email_from = 'kasia.bryl@artlessdesign.pl';
 
 	$email_subject = "Artless Design - new form submission";
 				
@@ -24,7 +29,8 @@
 	$headers = "Content-Type: text/html; charset=UTF-8";
 	
 	mail("katarzyna.bryl@artlessdesign.pl",$email_subject,$email_body, $headers);
-	header("Location: index.html");
+	$_SESSION['thanks']='<span style="color:green; margin-top:20px;"><b>Dziękujemy za przesłanie formularza. Sprawdź swoją skrzynkę mailową</b></span>';
+	header("Location: #thanks");
 
 	$Second_email_to = $visitor_email;
 	$Second_subject = "Artless Design - formularz kontaktowy";
@@ -38,8 +44,11 @@
 	
 	$headers = "From: katarzyna.bryl@gmail.com\r\n";
 	$headers .= "Content-Type: text/html; charset=UTF-8";
-	
 	mail($Second_email_to, $Second_subject, $Second_body, $headers);
+	
+} else {
+	header("Location: projektowanie-wnętrz");
+}
 ?>
 </body>
 </html>

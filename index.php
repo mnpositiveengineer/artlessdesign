@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE HTML>
 <HTML lang="pl">
 <head>
@@ -248,7 +252,15 @@
 						<label for="wiadomosc">wiadomość</label>
 						<textarea class="form-control" id="wiadomosc" rows="10" cols="50" name="message"></textarea>
 					</div>
+					<div id="thanks" style="text-align:center;">
 					<input type="submit" value="Zamów wycenę projektu">
+					<?php
+						if(isset($_SESSION['thanks'])) {
+							echo $_SESSION['thanks'];
+						}
+					?>
+					</div>
+					
 				</form>
 				<p style="text-align:center; margin-top:30px; margin-bottom:0; font-size:12px; max-width: 800px; margin-right: auto; margin-left: auto;">Dane osobowe podane w formularzu będą przetwarzane w celu przygotowania i przesłania Ci wyceny projektu, a ich administratorem będzie Katarzyna Bryl, ul. Pelargoniowa 17, 62-510 Konin. Szczegóły znajdziesz w <a href="#"><span style="color: rgba(198, 163, 97, 100); text-decoration: underline;">polityce prywatności.</span></a></p>
 			</div>

@@ -5,7 +5,8 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine On
-RewriteRule projektowanie-wnętrz index.html
+RewriteRule projektowanie-wnętrz index.php
+RewriteRule formularz-wyslany#thanks index.php
 RewriteRule nowojorskie-wnętrze w-nowojorskim-stylu.html
 RewriteRule wnętrze-kamienicy w-zrekonstruowanej-kamienicy.html
 RewriteRule wnętrze-z-biokominkiem z-biokominkiem-w-roli-głównej.html
